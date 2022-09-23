@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sandwich Roulette</title>
+</head>
+<body>
+    <h1>Sandwich Roulette</h1>
+    <div class="ingredient-container">
+        <form id="qtyForm" name="qtyForm">
+            <label for="sauceQty">Sauces</label>
+            <input type="text" class="inputQty" name="sauceQty">
+            <label for="toppingQty">Toppings</label>
+            <input type="text" class="inputQty" name="toppingQty">
+            <label for="sauceQty">Proteins</label>
+            <input type="text" class="inputQty" name="proteinQty">
+            <label for="toppingQty">Cheeses</label>
+            <input type="text" class="inputQty" name="cheeseQty">
+            <button class="btn" type="button" onclick="generate()"> Generate </button>
+            <button class="btn" type="button" onclick="randGenerate()"> Randomize </button>
+        </form>
+    </div>
+    <div id="sandwich">
+        <div id="bread"></div>
+        <div id="sauce"></div>
+        <div id="topping"></div>
+        <div id="cheese"></div>
+        <div id="protein"></div>
+    </div>
+</body>
+</html>
